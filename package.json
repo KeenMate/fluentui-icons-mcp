@@ -1,0 +1,43 @@
+{
+  "name": "@keenmate/fluentui-icons-mcp",
+  "version": "1.0.0-rc01",
+  "description": "MCP server for searching FluentUI icons - use with Claude Desktop, Claude Code, or any MCP client",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "fluentui-icons-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "fluentui",
+    "icons",
+    "claude",
+    "ai",
+    "assistant"
+  ],
+  "author": "Keenmate",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keenmate/fluentui-icons-mcp"
+  },
+  "homepage": "https://fluentui-icons.keenmate.dev",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
