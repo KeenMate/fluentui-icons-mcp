@@ -21,8 +21,8 @@ clean: ## Clean build artifacts
 	rm -rf dist/
 	rm -rf node_modules/
 
-publish-dry: build ## Dry run of npm publish (shows what would be published)
+publish-dry: ## Dry run of npm publish (shows what would be published)
 	npm publish --access public --tag rc --dry-run
 
-publish: build ## Publish to npm
+publish: ## Publish to npm (builds automatically via prepublishOnly)
 	npm publish --access public --tag rc

@@ -2,6 +2,8 @@
 
 An MCP (Model Context Protocol) server that provides FluentUI icon search capabilities to AI assistants like Claude.
 
+> **Note:** This MCP server uses the [FluentUI Icons Search](https://fluentui-icons.keenmate.dev) API by Keenmate. It's a free service - please don't abuse it.
+
 ## Features
 
 - **search_icons** - Search for icons by name, with optional style and size filters

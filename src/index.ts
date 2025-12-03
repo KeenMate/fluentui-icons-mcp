@@ -14,7 +14,7 @@ const server = new McpServer({
 // Tool: Search for icons
 server.tool(
   "search_icons",
-  "Search FluentUI icons by name. Returns matching icons with SVG URLs that can be used directly in HTML/Markdown.",
+  "Search FluentUI icons by name. Filter by style (regular/filled) and size (16-48px). Use the icon names with Microsoft's @fluentui/svg-icons npm package, or download SVGs from the provided URLs (do not hotlink).",
   {
     query: z.string().describe("Search term (e.g., 'pen', 'calendar', 'user', 'arrow')"),
     style: z.enum(["regular", "filled"]).optional().describe("Icon style filter"),

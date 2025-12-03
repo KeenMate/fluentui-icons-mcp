@@ -1,6 +1,6 @@
 {
   "name": "@keenmate/fluentui-icons-mcp",
-  "version": "1.0.0-rc01",
+  "version": "1.0.0",
   "description": "MCP server for searching FluentUI icons - use with Claude Desktop, Claude Code, or any MCP client",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keenmate/fluentui-icons-mcp"
+    "url": "git@github.com:KeenMate/fluentui-icons-mcp.git"
   },
   "homepage": "https://fluentui-icons.keenmate.dev",
   "dependencies": {
